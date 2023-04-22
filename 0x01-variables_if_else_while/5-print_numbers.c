@@ -1,0 +1,16 @@
+#include<stdio.h>
+/**
+*main - prints all single digit numbers of base 10
+*starting from 0
+*Return: 0 (Success)
+*/
+int main(void)
+{
+int s = 0, e = 9;
+while (s <= e)
+{
+putchar(s + '0');
+}
+putchar('\n');
+return (0);
+}
