@@ -15,7 +15,7 @@ s = 65;
 e = 90;
 while (s <= e)
 {
-putchar('\n');
+putchar(s);
 s++;
 }
 putchar('\n');
