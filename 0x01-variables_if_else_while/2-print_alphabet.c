@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
-*main - prints alphabet in lowcase and uppercase
+*main - prints the alphabet in lowcase
 *Return: 0 (Success)
 */
 int main(void)
@@ -14,3 +14,4 @@ s++;
 putchar('\n');
 return (0);
 }
+
