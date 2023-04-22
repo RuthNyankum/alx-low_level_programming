@@ -1,4 +1,4 @@
-#include<stdio.>
+#include<stdio.h>
 /**
 *main - combination of two two digit number.
 *Return: 0 (Success)
