@@ -1,29 +1,29 @@
-#include<stdio.h>
+#include<stdio.>
 /**
-*main - combinations of two two-digit numbers.
+*main - combination of two two digit number.
 *Return: 0 (Success)
 */
 int main(void)
 {
-int num1 = 0, num2 = 1, num1max = 98, num2max = 99;
-while (num <= num1max)
+int i, j;
+for (i = 0; j < 100; i++)
 {
-num2 = num1 + 1;
-while (num2 <= num2max)
+for (j = 0; j < 100; j++)
 {
-putchar(num1 < 9 ? 0 + '0' : (num1 / 10) } '0');
-putchar(num1 < 9 ? num1 + '0' : (num1 % 10) + '0');
+if (i < j)
+{
+putchar(i / 10) + 48);
+putchar(i % 10) + 48);
 putchar(' ');
-putchar(num2 < 9 ? 0 + '0' : (num2 / 10) + '0');
-putchar(num2 < 9 ? num2 + '0' : (num2 % 10) + '0');
-if (num1 != num1max)
+putchar(j / 10) + 48);
+putchar(j % 10) + 48);
+if (i != 98 || j != 99)
 {
-putchar(',')'
+putchar(',');
 putchar(' ');
 }
-num2++;
 }
-num1++;
+}
 }
 putchar('\n');
 return (0);
