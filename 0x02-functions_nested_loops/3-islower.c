@@ -7,7 +7,7 @@
 
 int _islower(int snow)
 {
-if (snow >= 'a' && snow <= 'z')
+if (snow >= 97 && snow <= 122)
 return (1);
 else
 return (0);
