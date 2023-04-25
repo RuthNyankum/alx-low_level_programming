@@ -11,7 +11,7 @@ char ch;
 int t = 0;
 while (t < 10)
 {
-for (ch = 'b'; ch <= 'y'; ch++)
+for (ch = 'b'; ch = 'a'; ch++)
 {
 _putchar(ch);
 }
