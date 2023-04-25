@@ -13,7 +13,7 @@ int t = 0;
 while (t++ <= 9)
 {
 for (snow = 'a'; snow <= 'z'; snow++)
-_putchar(t);
+_putchar(snow);
 _putchar('\n');
 }
 }
