@@ -15,7 +15,7 @@ while (b < 4000000)
 if (b % 2 == 0)
 snow += b;
 c = b;
-b = a;
+b += a;
 a = c;
 }
 printf("%d\n", snow);
