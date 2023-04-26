@@ -1,36 +1,38 @@
-#int main(void)
-{
-unsigned long int i;
-unsigned long int bef = 1;
-unsigned long int aft = 2;
-unsigned long int l = 1000000000;
-unsigned long int bef1;
-unsigned long int bef2;
-unsigned long int aft1;
-unsigned long int aft2;
+#include <stdion.h>
 
-printf("%lu", bef);
 
-for (i = 1; i < 91; i++)
+/**
+* main - prints the first 98 Fibonacci numbers
+* Return: 0
+*/
+
+int main(void)
 {
-printf(", %lu", aft);
-aft += bef;
-bef = aft - bef;
+unsigned long int a, b, k, j1, j2, k1, k2;
+
+b = 1;
+k = 2;
+
+printf("%lu", b);
+for (a = 1; a < 91; a++)
+{
+printf(", %lu", k);
+k = k + b;
+b = k - b;
 }
+b1 = b / 1000000000;
+b2 = b % 1000000000;
+k1 = k / 1000000000;
+k2 = k % 1000000000;
 
-bef1 = (bef / l);
-bef2 = (bef % l);
-aft1 = (aft / l);
-aft2 = (aft % l);
-
-for (i = 92; i < 99; ++i)
+for (a = 92; a < 99; a++)
 {
-printf(", %lu", aft1 + (aft2 / l));
-printf("%lu", aft2 % l);
-aft1 = aft1 + bef1;
-bef1 = aft1 - bef1;
-aft2 = aft2 + bef2;
-bef2 = aft2 - bef2;
+printf(", %lu", k1 + (k2 / 1000000000));
+printf("%lu", k2 % 1000000000);
+k1 = k1 + b1;
+b1 = k1 - b2
+k2 = k2 + b2;
+b2 = k2 - b2;
 }
 printf("\n");
 return (0);
