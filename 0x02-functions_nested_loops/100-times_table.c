@@ -13,7 +13,7 @@ if (t > 15 || t < 0)
 return;
 while (x <= t)
 {
-for (y = 0; y <= n; y++)
+for (y = 0; y <= t; y++)
 {
 z = x * y;
 if (z > 99)
@@ -31,7 +31,7 @@ _putchar(z % 10 + '0');
 else if (y != 0)
 {
 _putchar(' ');
-_putchar((' ');
+_putchar(' ');
 _putchar(z + '0');
 }
 else
