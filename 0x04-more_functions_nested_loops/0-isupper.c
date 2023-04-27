@@ -7,11 +7,11 @@
 * Return: 1 for uppercase or 0 otherwise
 */
 
-int _isupper(int t);
+int _isupper(int t)
 {
-	if (t >= 64 && t <= 91)
+if (t >= 64 && t <= 91)
 {
-		return (1);
+return (1);
 }
-		return (0);
+return (0);
 }
