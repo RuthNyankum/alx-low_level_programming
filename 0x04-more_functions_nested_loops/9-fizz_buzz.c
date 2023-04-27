@@ -29,7 +29,7 @@ printf("%d", t);
 }
 if (t != 100)
 {
-printf(" ")'
+printf(" ");
 }
 }
 printf("\n");
