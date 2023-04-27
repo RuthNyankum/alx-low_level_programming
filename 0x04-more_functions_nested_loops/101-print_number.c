@@ -1,4 +1,4 @@
-#include “main.h”
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -7,6 +7,7 @@
 */
 
 void print_number(int n)
+
 {
 unsigned int t = n;
 if (n < 0)
