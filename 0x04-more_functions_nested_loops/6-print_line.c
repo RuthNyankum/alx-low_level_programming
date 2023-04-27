@@ -20,6 +20,6 @@ for (t = 0; t < n; t++)
 {
 _putchar(95);
 }
-_putchar('\n')
+_putchar('\n');
 }
 }
