@@ -15,7 +15,7 @@ int t;
 for (t = 0; t < n && src[t] != ‘\0’ t++)
 dest[t] = src[t];
 
-for (; n > t; i++)
+for (; n > t; t++)
 dest[t] = '\0';
 return (dest);
 }
