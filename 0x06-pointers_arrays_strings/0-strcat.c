@@ -15,7 +15,7 @@ while (dest[dlen])
 {
 dlen++;
 }
-{
+
 for (t = 0; src[t] != 0; t++)
 {
 dest[dlen] = src[t];
