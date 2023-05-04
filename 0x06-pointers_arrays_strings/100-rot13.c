@@ -14,7 +14,7 @@ int v;
 char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-for (u = 0; s[u] != '\0'; u++)
+for (u = 0; t[u] != '\0'; u++)
 {
 for (v = 0; v < 52; v++)
 {
