@@ -20,7 +20,7 @@ for (t = 0; src[t] != 0; t++)
 {
 dest[dlen] = src[t];
 dlen++;
-)
+}
 dest[dlen] = '\0';
 return (dest);
 }
