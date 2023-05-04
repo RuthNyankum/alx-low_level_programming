@@ -1,12 +1,12 @@
 #include "main.h"
 /**
 * leet - a function that encodes a string into 1337.
-* @t: input value
-* Return: t value
+* @t: input
+* Return: t
 */
 char *leet(char *t)
 {
-int u, j;
+int u, v;
 char s1[] = "aAeEoOtTlL";
 char s2[] = "4433007711";
 
@@ -16,7 +16,7 @@ for (v = 0; v < 10; v++)
 {
 if (t[u] == s1[v])
 {
-n[u] = s2[v];
+t[u] = s2[v];
 }
 }
 }
