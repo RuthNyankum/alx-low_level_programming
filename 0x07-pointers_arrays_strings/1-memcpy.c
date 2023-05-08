@@ -16,7 +16,7 @@ int u = n;
 
 for (; t < u; t++)
 {
-dest[t] = src[r];
+dest[t] = src[u];
 n--;
 }
 return (dest);
