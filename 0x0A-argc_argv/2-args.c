@@ -14,7 +14,7 @@ int snow = 0;
 if (argc > 0)
 {
 while (snow < argc)
-}
+{
 printf("%s\n", argv[snow]);
 snow++;
 }
