@@ -2,11 +2,13 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+
 /**
-* check_num - check
+* check_num - check string
 * @str: array string
 * Return: 0
 */
+
 int check_num(char *str)
 {
 unsigned int snow;
