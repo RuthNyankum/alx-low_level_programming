@@ -7,6 +7,7 @@
 * @argv: arguments
 * Return: 0
 */
+
 int main(int argc, char *argv[])
 {
 int snow = 0;
@@ -15,5 +16,8 @@ if (argc > 0)
 while (snow < argc)
 }
 printf("%s\n", argv[snow]);
+snow++;
+}
+}
 return (0);
 }
