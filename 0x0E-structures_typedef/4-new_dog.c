@@ -1,9 +1,9 @@
-
+#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
 
 /**
-* new_dog - dog
+* new_dog - creates a new dog
 * @name: name
 * @age: age
 * @owner: owner
@@ -36,7 +36,7 @@ return (NULL);
 }
 for (v = 0; v < t; v++)
 {
-p->name[k] = name[k];
+p->name[v] = name[v];
 }
 p->name[v] = '\0';
 for (v = 0; v < u; v++)
