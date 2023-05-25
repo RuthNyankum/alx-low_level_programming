@@ -25,7 +25,7 @@ switch (format[t])
 case 'c':
 printf("%s%c", sep, va_arg(list, int));
 break;
-case 't':
+case 'i':
 printf("%s%d", sep, va_arg(list, int));
 break;
 case 'f':
