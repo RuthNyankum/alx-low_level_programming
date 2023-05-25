@@ -1,5 +1,6 @@
-#include <stdio.h>
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
 
 /**
 * print_strings - a function that prints strings, followed by a new line.
@@ -7,33 +8,30 @@
 * @n: int
 * @...: A variable number
 */
-void print_strings(const char *separator, const unsigned int n, …)
 
+void print_strings(const char *separator, const unsigned int n, ...)
 {
-va_list args;
-unsigned int t = 0;
-char *string;
+va_list strings;
+char *t;
+unsigned int index;
 
-if (n > 0)
-{
-va_start(args, n);
+va_start(strings, n);
 
-while (t < n)
+for (index = 0; index < n; index++)
 {
-string = va_arg(args, char *);
-if (string == NULL)
-printf("%s", "(nil)");
+t = va_arg(strings, char *);
+
+if (t == NULL)
+printf("(nil)");
 else
-printf("%s", string);
+printf("%s", t);
 
-if (t != n - 1 && separator != NULL)
+if (index != (n - 1) && separator != NULL)
 printf("%s", separator);
-
-t++;
-}
-
-va_end(args);
 }
 
 printf("\n");
+
+va_end(strings);
 }
+
