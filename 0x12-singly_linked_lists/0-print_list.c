@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include "lists.h"
-
 /**
 * print_list - a function that prints all the elements
 * @h: pointer
@@ -9,18 +6,16 @@
 
 size_t print_list(const list_t *h)
 {
-size_t t;
+size_t t = 0;
 
-for (t = 0; h != NULL; t++)
+while (h)
 {
-if (h->str == NULL)
-{
+if (!h->str)
 printf("[0] (nil)\n");
 else
-{
 printf("[%u] %s\n", h->len, h->str);
-}
 h = h->next;
+t++;
 }
 return (t);
 }
