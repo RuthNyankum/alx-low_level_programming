@@ -16,6 +16,7 @@ for (t = 0; h != NULL; t++)
 if (h->str == NULL)
 {
 printf("[0] (nil)\n");
+}
 else
 {
 printf("[%u] %s\n", h->len, h->str);
